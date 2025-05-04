@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolutas</title>
+    <link rel="stylesheet" href="./css/posiciones.css">
+</head>
+
+<body>
+    <header>
+        <h1>Las cajas y sus posiciones</h1>
+    </header>
+    <div id="container">
+        <div id="absoluto">
+            <h2>El padre de todas las cajas de colores <span>&#9947</span> </h2>
+        </div>
+        <!---------Relativos: 1, 2, 3----------->
+        <div class="position" id="relative1"><span>relative1</span>
+            <div class="position" id="relative2"> <span>relative2</span></div>
+            <div class="position" id="relative3"> <span>relative3</span></div>
+
+        </div>
+
+        <div class="position" id="relativo"><span>relativo</span></div>
+
+        <!---------------- Absolutos ------------->
+
+        <div class="position" id="absolute"><span>absolute</span>
+            <!--------------- fixed-fijos -1 +--7------------>
+
+        </div>
+        <div class="position" id="fixed"><span><h2>fixed</h2></span>
+        </div>
+        <div class="position" id="fixed2"><span>fixed2</span></div>
+        <div class="position" id="fixed3"><span>fixed3</span></div>
+        <div class="position" id="fixed4"><span>fixed4</span></div>
+        <div class="position" id="fixed5"><span>fixed5</span></div>
+        <div class="position" id="fixed6"><span>fixed6</span></div>
+        <div class="position" id="fixed7"><span>fixed7</span></div>
+
+        <!------- El segundo absolute2 ------------------>
+
+        <div class="position" id="absolute2"><span>absolute2</span></div>
+
+        <!------------ Estatic ----------------------->
+        <div class="position" id="static"> <span><h2>static</h2></span> </div>
+
+    </div>
+    <article>
+        <ul>
+            <li>
+                <b> Estatic</b>-Si no se espicifica, por defecto todas las cajas son de posición <b>"estatic" </b>-dee
+                tipo flotante
+                como una nube.
+            </li>
+            <li>
+                A las cajas de posición <b>"estatic"</b> no se le pueden aplicar estilos, ni-top/bottom/left/right, ni
+                z-index.
+            </li>
+            <li>Para evitar que una caja sea <b>"estatic" </b>hay que aplicarle la posición.</li>
+
+            <li>
+                <b>Absoluta</b>-Las cajas en posición <b>"Absoluta"</b> se colocan en relación a la
+                caja-"padre-ascendiente" más cercano con la posición diferente de "Static" y si no lo encuentra, al
+                respeto al body(la pantalla del dispositivo) y se queda con valores del body.
+            </li>
+            <li>
+                <b>Relative</b> Las cajas de esta posición se desplazan en relación la caja más cercana, o respeto del
+                flujo del documento.
+            </li>
+            <li>
+                <b>Fixed</b> solo se posiciona en relación a la pantalla del dispositivo. Para usarlo el body debería
+                tener el tamaño mínimo. ( Para que todo dispositivo tenga los mismos valores-Body: min-height: 100vh.)
+            </li>
+            <li>
+                <b>Sticky</b> Es una posición híbrida, entre "Relativo y "Fixed", es similar a la celda titular del
+                Exel, al desplazarse de la pantalla esa caja siempre queda fijada. Necesita color, y valores: top:0, y
+                left: 0-respeto al body.
+            </li>
+            <li>
+                <b>Z-INDEX</b> significan capas transparentes y se usa para mantenerlas en el mismo lugar al moverte por la página.
+            </li>
+        </ul>
+
+    </article>
+
+</body>
+
+</html>
